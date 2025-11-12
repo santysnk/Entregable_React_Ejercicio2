@@ -1,0 +1,113 @@
+:root {
+   color-scheme: light;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: system-ui, Segoe UI, Arial, sans-serif;
+}
+
+.pagina {
+   min-height: 100vh;
+   background: #f3f4f6;
+   padding: 24px;
+   color: #111827;
+}
+
+h1 {
+   margin: 0 0 16px;
+}
+
+.card {
+   background: #cdbbe6;
+   border: 1px solid #e5e7eb;
+   border-radius: 10px;
+   padding: 16px;
+   margin: 16px 0;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+   color: #111827;
+}
+
+/* Tema oscuro solo para la card que contiene el Toggle */
+.card.dark-card {
+   background: #111827; /* fondo oscuro */
+   color: #f9fafb; /* texto claro */
+   border-color: #0b1220;
+}
+
+/* Opcional: contrastar inputs/badges dentro de la card oscura */
+.card.dark-card .input {
+   background: #111827;
+   color: #f9fafb;
+   border-color: #374151;
+}
+.card.dark-card .badge {
+   background: #1f2937;
+   color: #e5e7eb;
+}
+
+/* Opcional: botón con algo más de contraste en oscuro */
+.card.dark-card .btn {
+   background: #6366f1;
+}
+.card.dark-card .btn:hover {
+   filter: brightness(0.95);
+}
+
+.input,
+.btn {
+   padding: 8px 10px;
+   border-radius: 8px;
+   border: 1px solid #d1d5db;
+   font-size: 14px;
+}
+
+.btn {
+   background: #4f46e5;
+   color: #fff;
+   cursor: pointer;
+   border: none;
+}
+
+.btn.sec {
+   background: #6b7280;
+}
+
+.btn.danger {
+   background: #dc2626;
+}
+
+.table {
+   width: 100%;
+   border-collapse: collapse;
+   background: #fff;
+}
+
+.table th,
+.table td {
+   border: 1px solid #e5e7eb;
+   padding: 8px;
+   text-align: left;
+}
+
+.table tr:nth-child(odd) {
+   background: #f9fafb;
+}
+
+.row {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.badge {
+   background: #eef2ff;
+   padding: 2px 8px;
+   border-radius: 999px;
+   font-size: 12px;
+}
